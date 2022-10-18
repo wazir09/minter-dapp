@@ -7,21 +7,24 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "YOUR COLLECTION NAME";
-const description = "Remember to replace this description";
+const namePrefix = "Krypto Ink'd";
+const description = "Krypto Inkd is a collection of 10,000 fun and unique NFTs (Non-Fungible Tokens) randomly generated from more than one hundred fully hand-drawn character traits";
 const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
 const layerConfigurations = [
   {
-    growEditionSizeTo: 5,
+    growEditionSizeTo: 10000,
     layersOrder: [
-      { name: "Background" },
-      { name: "Eyeball" },
-      { name: "Eye color" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
+      { name: "01Wallpaper" },
+      { name: "02Mouth" },
+      { name: "03Head" },
+      { name: "04Shirt" },
+      { name: "05Eyes" },
+      { name: "06Goatee" },
+      { name: "07Accesories" },
+      { name: "08Head Gear" },
+      { name: "09Ear Ring" },
+      { name: "010Eye Brow" },
     ],
   },
 ];
@@ -31,13 +34,13 @@ const shuffleLayerConfigurations = true;
 const debugLogs = false;
 
 const format = {
-  width: 512,
-  height: 512,
+  width: 1500,
+  height: 1500,
   smoothing: false,
 };
 
 const extraMetadata = {
-  external_url: "https://codecats.xyz", // Replace with your website or remove this line if you do not have one.
+  external_url: "https://kryptoinkd.com/", // Replace with your website or remove this line if you do not have one.
 };
 
 // NFTPort Info
